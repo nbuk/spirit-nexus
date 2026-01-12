@@ -1,11 +1,8 @@
-version: "3.9"
-
 services:
-  app:
-    image: node:22-alpine
-    working_dir: /app
-    volumes:
-      - ./:/app
-    command: sh -c "npm install && npm run build && npm run start"
+  spirit-nexus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spirit-nexus-test
     ports:
       - "3000:3000"
