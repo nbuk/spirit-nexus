@@ -7,6 +7,8 @@ ___
 docker compose up -d
 ```
 
+The application will be available at http://localhost:3000
+
 ## Stack
 
 * Feature Sliced Design
